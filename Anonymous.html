@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using set Timeout </title> <!-- Title on the page -->
+</head>
+<body>
+	
+	<script type="text/javascript">
+
+		var add = function(a,b) {		/* Anonymous function */
+			return a + b ;
+
+		};
+
+		function second(){			/*Second function */
+			var a = 25;
+			var b = 44;
+			var sum = add(a,b);
+			return sum;
+			
+		}
+		var res = second();
+		alert("Addition Result is = " + res);
+
+		function sayHi() {			/* Function will display hello after 5 secinds */
+ 			 alert('Hello');
+			}
+
+		setTimeout(sayHi, 5000);
+	</script>
+
+</body>
+</html>
